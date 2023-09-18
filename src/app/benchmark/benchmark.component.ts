@@ -22,10 +22,10 @@ export class BenchmarkComponent implements OnInit {
 
     const timer = document.getElementById('timer');
 
-    startTime = Date.now() - elapsedTime
+    startTime = Date.now() - elapsedTime;
 
     timerInterval = setInterval( ()=> {
-      elapsedTime = Date.now() - startTime
+      elapsedTime = Date.now() - startTime;
       // @ts-ignore
       timer.textContent = this.formatTimer(elapsedTime);
     }, 10)
